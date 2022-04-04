@@ -1,0 +1,153 @@
+.staff-list-carousel
+    .carousel-inner
+        width 90%
+        flex-direction row
+
+        .carousel-item
+            align-items: self-start;
+            margin-right: 0;
+
+    .staff-container
+        flex-direction column
+        background white
+        color #333
+        padding 21px 0
+
+        .staff-image-container
+            align-self center
+            display flex
+            align-items center
+            justify-content center
+
+            .staff-image
+                align-self center
+                cursor pointer
+                width 70px
+                height 70px
+                clip-path circle(50% at center center);
+                vertical-align center
+                object-fit cover
+
+        &__text
+            display flex
+            flex-direction column
+            justify-content center
+
+            @media $md-and-smaller
+                text-align center
+
+            .name
+                font-family Montserrat
+                font-weight 600
+                font-size 12px
+                line-height 16px
+                margin-bottom 10px
+
+            .position
+                font-family Lora
+                font-size 12px
+                line-height 15px
+                color #333
+
+
+    .carousel-control-next
+        justify-content flex-end
+    .carousel-control-prev
+        justify-content flex-start
+
+    .carousel-control-next-icon
+        background: center no-repeat url("/img/icons/slider-arrow-right.svg")
+        background-size: contain;
+
+    .carousel-control-prev-icon
+        background: center no-repeat url("/img/icons/slider-arrow-left.svg")
+        background-size: contain;
+
+    @media $xs-and-smaller
+        .carousel-inner
+            width 150%
+            flex-direction row
+            transform translateX(-16.6%)
+
+        .carousel-control-next
+            position: absolute;
+            justify-content flex-end
+            right: -15px;
+            width: 25%;
+            opacity 1
+            background: center no-repeat url("/img/mask_right.png")
+            background-size: cover;
+
+        .carousel-control-prev
+            position: absolute;
+            justify-content flex-start
+            left: -15px;
+            width: 25%;
+            opacity 1
+            background: center no-repeat url("/img/mask_left.png")
+            background-size: cover;
+
+        .carousel-control-next-icon
+            position relative
+            right 15px
+            background: center no-repeat url("/img/icons/slider-arrow-right.svg")
+            background-size: contain;
+
+        .carousel-control-prev-icon
+            position relative
+            left 15px
+            background: center no-repeat url("/img/icons/slider-arrow-left.svg")
+            background-size: contain;
+
+
+    .carousel-inner .active,
+    .carousel-inner .active + .carousel-item,
+    .carousel-inner .active + .carousel-item + .carousel-item,
+    .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item
+        display: flex
+
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),//
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,//
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item,
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item
+        transition: none;
+
+    .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item
+        position: absolute;
+        top: 0;
+        right: -33.333333%;
+        display: flex;
+        align-items center
+        visibility: visible;
+
+    .carousel-inner .carousel-item-next //
+        position: relative;
+        transform: translate3d(0, 0, 0);
+
+
+    .active.carousel-item-left + .carousel-item-next.carousel-item-left//
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+
+    .carousel-item-next.carousel-item-left + .carousel-item,//
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+
+    .carousel-inner .carousel-item-prev.carousel-item-right//
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        visibility: visible;
+
+    .active.carousel-item-right + .carousel-item-prev.carousel-item-right,//
+    .carousel-item-prev.carousel-item-right + .carousel-item,//
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,//
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: flex;

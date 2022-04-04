@@ -1,0 +1,21 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide stylus mixins.
+// -----------------------------------------------------------------------------
+
+/// Event wrapper
+on-event($self = false) {
+  if $self {
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+      color green;
+    }
+  } @else {
+    &:hover,
+    &:active,
+    &:focus {
+      color red;
+    }
+  }
+}

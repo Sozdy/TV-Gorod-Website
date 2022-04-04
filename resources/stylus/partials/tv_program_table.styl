@@ -1,0 +1,87 @@
+.tv-program-table
+    font-family Lora
+
+    .date-slider
+        .arrow
+            padding: 10px 15px
+            cursor: pointer;
+
+            &:hover
+                .arrow-left,
+                .arrow-right
+                    transform scale(1.08)
+
+            .arrow-left,
+            .arrow-right
+                width: 10px
+                height: 18px
+                transition .3s
+
+
+
+        .dates-container
+            font-family: Montserrat
+            background-color #F8F8F8
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            margin: 0 15px
+            transition .3s
+
+            a
+                padding: 10px
+
+                &:hover
+                    background-color #F1F1F1
+
+                    &.active
+                        &:hover
+                            background-color #0B3F81;
+                .date
+                    cursor pointer
+                    display flex
+                    justify-content center
+
+
+                &.active
+                    font-weight: bold;
+                    color white
+                    background-color #0B3F81;
+
+                    &:hover
+                        background-color #0B3F81;
+
+
+    .row.tv-program-item
+        background-color #F8F8F8
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+        .time
+            display flex
+            align-items center
+            padding: 15px
+            background-color #F1F1F1
+            min-width 68px
+            @media $md-and-smaller
+                min-width 60px
+
+
+        .tv-program-name
+            padding: 15px
+
+        .age-restrictions
+            display flex
+            justify-content flex-end
+            padding: 15px
+            justify-self flex-end
+
+
+    @media $lg-and-smaller
+        .date-item-container:nth-child(7)
+            display: none
+    @media $md-and-smaller
+        .date-item-container:nth-child(6)
+            display: none
+        .date-item-container:nth-child(5)
+            display: none
+    @media $xs-and-smaller
+        .date-item-container:nth-child(4)
+            display: none

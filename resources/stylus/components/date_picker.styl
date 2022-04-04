@@ -1,0 +1,41 @@
+.data-picker-container
+    #data-picker
+        cursor: pointer;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 26px;
+        position: relative;
+
+        .date
+            cursor pointer
+            text-decoration underline
+
+    &.open
+        .calendar-component
+            max-height 390px
+
+    .calendar-component
+        max-width 340px
+        transition all 0.3s
+        max-height 0
+        overflow hidden
+        z-index 500
+        position: absolute;
+        top: 28px
+        font-size: 18.2424px;
+        line-height: 30px;
+
+    .backdrop
+        position fixed
+        top: 0
+        right: 0
+        bottom: 0
+        left: 0
+        background transparent
+        z-index 490
+        display none
+
+        &.open
+            display block

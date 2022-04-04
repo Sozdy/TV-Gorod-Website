@@ -1,0 +1,60 @@
+.main-about-picture
+    height 360px
+    width 100%
+    border-radius 3px
+    box-shadow 0 1px 5px rgba(0, 0, 0, 0.1)
+    overflow hidden
+    color white
+
+    .picture-mask
+        display flex
+        flex-direction column
+        justify-content  flex-end
+        background no-repeat center url("/img/main-about-picture-mask.png")
+        background-size: cover;
+        height 100%
+
+        .text
+            padding: 30px
+            @media $lg-and-smaller
+                padding: 23px
+            @media (max-width 576px)
+                padding: 12px
+
+    &__title
+        font-family Montserrat
+        font-style normal
+        font-weight 500
+        font-size 26px
+        line-height 33px
+        margin-bottom 40px
+        @media $lg-and-smaller
+            font-size 20px
+            line-height 25px
+        @media (max-width 576px)
+            font-size 16px
+            line-height 25px
+
+    &__subtitle
+        font-family Montserrat
+        font-style normal
+        font-weight 500
+        font-size 16px
+        line-height 26px
+        margin 0
+        position: relative;
+        @media $lg-and-smaller
+            font-size 14px
+            line-height 20px
+        @media (max-width 576px)
+            font-size 12px
+            line-height 17px
+
+        &:before
+            content ''
+            display block
+            position: absolute;
+            top: -10px
+            background-color: #fff
+            height 1px
+            width 100px

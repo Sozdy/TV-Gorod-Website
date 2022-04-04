@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<rss
+    xmlns:yandex="http://news.yandex.ru"
+    xmlns:media="http://search.yahoo.com/mrss/"
+    version="2.0">
+    <channel>
+        <title>Информационное агентство "Город"</title>
+        <link>https://твгород.рф</link>
+        <description>Информагентство, миссией которой является оперативное, взвешенное и объективное освещение событий в
+            городе Благовещенске и Амурской области
+        </description>
+        <lastBuildDate>Wed, 21 Apr 2021 23:40:35 +0900</lastBuildDate>
+        <ttl>60</ttl>
+        <yandex:logo>http://portamur.ru/images/logo_for_rss.gif</yandex:logo>
+        <yandex:logo type="square">http://portamur.ru/images/square_logo_for_ya.png</yandex:logo>
+        <item>
+            <title>Мэр Благовещенска одобрил идею школьников-депутатов поддержать талантливую молодежь премиями</title>
+            <link>
+                https://xn--b1acd3balk.xn--p1ai/news/%D0%BC%D1%8D%D1%80-%D0%B1%D0%BB%D0%B0%D0%B3%D0%BE%D0%B2%D0%B5%D1%89%D0%B5%D0%BD%D1%81%D0%BA%D0%B0-%D0%BE%D0%B4%D0%BE%D0%B1%D1%80%D0%B8%D0%BB-%D0%B8%D0%B4%D0%B5%D1%8E-%D1%88%D0%BA%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2-%D0%B4%D0%B5%D0%BF%D1%83%D1%82%D0%B0%D1%82%D0%BE%D0%B2-%D0%BF%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%B0%D1%82%D1%8C-%D1%82%D0%B0%D0%BB%D0%B0%D0%BD%D1%82%D0%BB%D0%B8%D0%B2%D1%83%D1%8E-%D0%BC%D0%BE%D0%BB%D0%BE%D0%B4%D0%B5%D0%B6%D1%8C-%D0%BF%D1%80%D0%B5%D0%BC%D0%B8%D1%8F%D0%BC%D0%B8
+            </link>
+            <pdalink>
+                https://xn--b1acd3balk.xn--p1ai/news/%D0%BC%D1%8D%D1%80-%D0%B1%D0%BB%D0%B0%D0%B3%D0%BE%D0%B2%D0%B5%D1%89%D0%B5%D0%BD%D1%81%D0%BA%D0%B0-%D0%BE%D0%B4%D0%BE%D0%B1%D1%80%D0%B8%D0%BB-%D0%B8%D0%B4%D0%B5%D1%8E-%D1%88%D0%BA%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2-%D0%B4%D0%B5%D0%BF%D1%83%D1%82%D0%B0%D1%82%D0%BE%D0%B2-%D0%BF%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%B0%D1%82%D1%8C-%D1%82%D0%B0%D0%BB%D0%B0%D0%BD%D1%82%D0%BB%D0%B8%D0%B2%D1%83%D1%8E-%D0%BC%D0%BE%D0%BB%D0%BE%D0%B4%D0%B5%D0%B6%D1%8C-%D0%BF%D1%80%D0%B5%D0%BC%D0%B8%D1%8F%D0%BC%D0%B8
+            </pdalink>
+            <description>Если решение примут, то 20 человек будут получать по 30 тысяч рублей</description>
+            <author>Кристина Слепцова</author>
+            <category>Без категории</category>
+            <enclosure
+                url="https://твгород.рф/img/news/33306.jpg"
+                type="image/jpeg"/>
+            <media:group>
+                <media:content
+                    url="http://www.rossiyskie-novosti.ru/video/100237"
+                    type="video/x-ms-asf"/>
+                <media:thumbnail
+                    url="http://www.rossiyskie-novosti.ru/2003/03/25/yandex1.jpg"
+                    type="image/jpeg"/>
+            </media:group>
+            <pubDate>Sun, 21 Apr 2021 11:53:01 +0600</pubDate>
+            <yandex:genre>message</yandex:genre>
+            <yandex:full-text>На внеочередном заседании благовещенской гордумы предложили учредить премии для поддержки
+                талантливой молодежи. Денежную выплату, согласно проекту, смогут получать жители амурской столицы от 14
+                до 35 лет. По 20 человек в год. Впрочем, идея эта исходила не от депутатов, а от тех, кто на несколько
+                часов занял их кресла. Кто это был, и готов ли мэр Олег Имамеев рассмотреть предложение всерьез, сейчас
+                узнаете.
+            </yandex:full-text>
+        </item>
+    </channel>
+</rss>

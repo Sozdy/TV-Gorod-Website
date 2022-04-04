@@ -1,0 +1,66 @@
+.news-block-big
+    background white
+    border-radius 3px
+    color #333
+    cursor pointer
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    display flex
+    overflow hidden
+    position relative
+    font-size 100%
+    flex-direction column
+    margin-bottom: 30px
+
+    @media $sm-and-smaller
+        margin-bottom: 16px
+
+
+    .image-container
+        width 100%
+        padding-bottom 75%
+        position: relative;
+        background-size: cover;
+        background-position: center;
+
+        .news-icons
+            position: absolute
+            top: 15px
+            right: 15px
+
+    .content
+        background linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0.709513) 35%, rgba(0, 0, 0, 0.529412) 55%, rgba(0, 0, 0, 0) 100%);
+        position absolute
+        bottom 0
+        color white
+
+        .title
+            font-family: Montserrat
+            font-style: normal
+            font-size: 18px
+            line-height: 24px
+            color: #FFFFFF
+
+            @media $md-and-smaller
+                font-size: 16px;
+                line-height: 22px;
+
+            @media $sm-and-smaller
+                font-size: 14px;
+                line-height: 18px;
+
+
+        .description
+            font-family: Lora
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 20px
+            display: flex
+            align-items: center
+            color: #FFFFFF
+
+        @media $xs-and-smaller
+            .share__more
+                width: 25px;
+                height: 25px;
+                object-fit: contain;

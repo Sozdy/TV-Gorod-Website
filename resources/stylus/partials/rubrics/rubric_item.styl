@@ -1,0 +1,56 @@
+.rubric-item
+    .rubric-item-picture
+        position: relative;
+        padding-top 68.44%
+        border-radius 3px
+        box-shadow 0 1px 5px rgba(0, 0, 0, 0.1)
+        overflow hidden
+        color white
+
+        .picture-mask
+            position absolute
+            top: 0
+            bottom: 0
+            left: 0
+            right: 0
+            display flex
+            flex-direction column
+            justify-content  center
+            align-items center
+            background no-repeat center url("/img/rubric-picture-mask.png")
+            background-size: cover;
+            height 100%
+
+            &:hover
+                .play-btn
+                    transform scale(1.06)
+
+            .play-btn
+                background: no-repeat center url("/img/icons/youtube_white_btn.svg")
+                background-size: cover;
+                width 20.532%
+                height: 30%
+                transition .5s
+
+    .text
+        font-family Montserrat
+        font-weight 600
+        font-size 16.4924px
+        line-height 25px
+        @media $xs-and-smaller
+            padding: 17px 15px
+            vertical-align center
+            background #FFFFFF
+            box-shadow 0 1.02474px 5.12367px rgba(0, 0, 0, 0.1)
+            border-radius 3px
+
+            &:hover
+                img
+                    transform scale(1.06)
+
+            img
+                transition .3s
+                width: 26px
+                height: 26px
+
+

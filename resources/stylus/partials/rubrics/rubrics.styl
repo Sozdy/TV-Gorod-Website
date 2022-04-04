@@ -1,0 +1,24 @@
+.rubrics
+    .grid
+        display grid
+        grid-template 1fr 1fr / 1fr 1fr 1fr
+        grid-gap 25px
+        @media $xs-and-smaller
+            grid-template 1fr / 1fr
+            grid-gap 5px
+
+
+        .rubric-item
+            &.big
+                @media $sm-and-larger
+                    grid-area 1 / 1 / span 2 / span 2
+
+    .ytb-btn
+        background-color: #CD1010;
+        width: 275px
+        vertical-align center
+
+        @media $xs-and-smaller
+            width: 100%
+
+

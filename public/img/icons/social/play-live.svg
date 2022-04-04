@@ -1,0 +1,48 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 112 112" xml:space="preserve">
+    <style>
+        #play {
+            transform-origin: 46% 50%;
+            animation: 6s Blink ease infinite
+        }
+
+        @keyframes Blink {
+            0%, 15% {
+                transform: rotate(0deg);
+            }
+            35%, 100% {
+                transform: rotate(120deg);
+            }
+        }
+
+
+        #border {
+            stroke-width:6;
+            stroke-linecap:round;
+            stroke-dasharray: 450px;
+            animation: 6s BorderCircle ease infinite;
+        }
+
+        @keyframes BorderCircle {
+            15%{
+                stroke-dashoffset: 0;
+            }
+
+            35%, 65%{
+                stroke-dashoffset: -450px;
+            }
+
+            65.01%{
+                stroke-dashoffset: 450px;
+            }
+
+            85%{
+                stroke-dashoffset: 0;
+            }
+        }
+</style>
+    <path id="play"
+          d="M86.9 58c1.9-1.1 1.9-2.8 0-3.9L34.9 24c-1.9-1.1-3.4-.2-3.4 2v60.1c0 2.2 1.5 3.1 3.4 2 0-.1 52-30.1 52-30.1z"
+          fill="darkred"/>
+
+    <path id="border" fill="none" stroke="darkred" d="M5.7 5.7h100.7v100.7H5.7z"/>
+</svg>

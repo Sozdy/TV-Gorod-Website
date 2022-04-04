@@ -1,0 +1,175 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+.partial-navbar
+    .navbar
+        padding: 0
+        z-index 10
+        background white
+        border-bottom 1px solid #dddddd
+        height 5.6875em
+
+        .content
+            position: relative
+            display flex
+            justify-content space-between
+            align-items center
+            width: 100%
+
+        .logo
+            display block
+            height 3em
+            width 9.764375em
+
+        .links
+            display block
+            max-width 730px
+
+            .link
+                display flex
+                height 100%
+                margin-left 1em
+                margin-right 1em
+                align-items center
+                font-weight 500
+
+                &.active
+                    border-bottom 3px solid $red
+
+                .live-link
+                    //line-height: 100%;
+                    //border: 3px solid red//linear-gradient(330.46deg, #16b76d 11.09%, #00b8ff 95.42%);
+                    //border-radius: 10px;
+                    //color: white;
+                    //padding: 10px 10px;
+                    //font-weight: 600;
+                    white-space: nowrap;
+                    color darkred
+
+        .search-button
+            width 25px
+            height 25px
+            cursor pointer
+            margin-right: 15px
+            //visibility hidden
+
+        #search-input.show
+            display flex
+
+        #search-input
+            position: absolute;
+            top: 100%
+            right: 0
+            left: 0
+            display none
+            justify-content space-between
+
+            .search-input
+                width: 100%
+                border: 1px solid #E3E3E3;
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 14px;
+                padding: 10px 16px
+                color: #828282;
+
+                &:focus
+                    outline none
+
+            .search-btn
+                height: 40px
+
+            .search-btn-close
+                padding 5px
+                cursor: pointer;
+                position: absolute
+                top: 50%
+                right: 56px
+                transform translateY(-50%)
+
+
+        .navbar-burger
+            position: relative;
+            width: 30px
+            cursor pointer
+            height: 20px
+
+            &.active
+                &:before
+                    transform rotate(45deg)
+                    top: 9px
+                &:after
+                    transform rotate(-45deg)
+                    bottom: 9px
+
+                span
+                    transform scale(0)
+
+            span
+                position absolute
+                background-color: #333
+                left: 0
+                width: 100%
+                height: 2px
+                top: 9px
+                transition .3s
+
+
+            &:before,
+            &:after
+                content ''
+                background-color: black
+                position: absolute;
+                width: 100%
+                height: 2px
+                left: 0
+                transition .3s
+
+
+            &:before
+                top: 0
+
+            &:after
+                bottom: 0
+                height: 2px
+
+
+
+    .mobile-navbar
+        overflow auto
+        padding-top 80px
+        position fixed
+        will-change: transform
+        top: -100%
+        left: 0
+        width: 100%
+        height: 100%
+        background-color: white
+        z-index 5
+        transition .3s
+        display flex
+        flex-direction column
+        justify-content center
+        align-items center
+
+
+        &.active
+            top 0
+
+        .links-container
+            display flex
+            flex-direction column
+            justify-content center
+            align-items center
+            width: 100%
+
+            .link
+                text-align center
+                width: 100%
+                font-size 18px
+                line-height 26px
+
+            a.active
+                font-weight bold

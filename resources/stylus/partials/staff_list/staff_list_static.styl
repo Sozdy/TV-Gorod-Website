@@ -1,0 +1,35 @@
+.staff-list-static
+    .staff-container
+        background white
+        border-radius 3px
+        color #333
+        box-shadow 0.7px 0.7px 11px rgba(0, 0, 0, 0.1);
+        padding 18px 12px 18px 18px
+
+        .staff-image-container
+            align-self center
+
+            .staff-image
+                align-self center
+                width 70px
+                height 70px
+                clip-path circle(50% at center center);
+                vertical-align center
+                object-fit cover
+
+        &__text
+            display flex
+            flex-direction column
+            justify-content center
+
+            .name
+                font-family Montserrat
+                font-weight 600
+                font-size 14px
+                line-height 20px
+
+            .position
+                font-family Lora
+                font-size 12px
+                line-height 19px
+                color #333

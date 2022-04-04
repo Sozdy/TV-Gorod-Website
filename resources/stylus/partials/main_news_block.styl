@@ -1,0 +1,69 @@
+.main-news-block
+    background url("/img/tmp_city.jpg") center
+    background-size cover
+    border-radius 3px
+    color white
+    cursor pointer
+
+    &:hover
+        color white
+
+    .overlay
+        width 100%
+        padding-top: 7.56em;
+        padding-bottom: 5em;
+        background linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0.709513) 35%, rgba(0, 0, 0, 0.529412) 55%, rgba(0, 0, 0, 0) 100%);
+        border-radius 3px
+        position relative
+
+        @media $md-and-smaller
+            //padding-top 4em
+            padding-bottom 5em
+
+        @media $sm-and-smaller
+            background linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0.709513) 35%, rgba(0, 0, 0, 0.529412) 55%, rgba(0, 0, 0, 0) 100%);
+            padding-top 2em
+            padding-bottom 2em
+
+        .content
+            max-width 26.25em
+            position relative
+
+            @media $sm-and-smaller
+                padding-top 30%
+                max-width none
+
+            H3
+                font-size 1.3em
+                font-weight 600
+
+            p
+                font-family Lora, serif
+                padding-top 0.5em
+
+                @media $sm-and-smaller
+                    display none
+
+            .publish-date
+                font-style italic
+                font-weight 500
+                font-size 0.625em
+
+                @media $sm-and-smaller
+                    font-size 100%
+
+            .social-buttons
+                img
+                    width 1em
+                    height 1em
+
+        .news-icons
+
+            @media $sm-and-smaller
+                position absolute
+                top 1em
+                right 1em
+
+            img
+                width 2em
+                height 2em

@@ -1,0 +1,25 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+html, body
+    background #F8F8F8
+    //overflow-x hidden
+
+body.lock
+    position: fixed;
+    overflow hidden
+
+body.modal-open
+    padding 0 !important
+
+body
+    background url("/img/city_bg.svg")
+    background-repeat repeat-x
+    background-position 0 150%
+    background-size 10%
+
+    .content-bg
+        background-color: #f8f8f8
+        @media $md-and-smaller
+            background-color: transparent

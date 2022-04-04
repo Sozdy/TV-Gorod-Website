@@ -1,0 +1,192 @@
+.admin-page
+    display flex
+
+    .admin-navbar
+        min-height: 100vh;
+        white-space nowrap
+        background: #2c323a;
+        transition transform 0.5s
+
+        .show-hide
+            display none
+            position absolute
+            width 2em
+            height 2em
+            background url("/img/icons/slider-arrow-right.svg") center no-repeat
+            background-size contain
+            top 1em
+            right 0
+            transform translateX(150%)
+            transition transform 0.5s
+            filter invert()
+
+        @media (max-width 765px)
+            position fixed
+            transform translateX(-95%)
+            z-index 9999
+
+            .show-hide
+                display block
+
+            &.opened
+                transform translateX(0%)
+
+                .show-hide
+                    transform translateX(150%) scaleX(-1)
+
+
+        .item
+            display block
+            color white
+            padding 0.5em 1em
+            //border-top 1px solid gray
+            transition all 0.3s
+            font-size 90%
+            position relative
+            padding-right 2.5em
+
+            &.active
+                background dimgray
+
+            &:hover
+                background gray
+
+            .icon
+                margin-right 0.7em
+
+            .arrow
+                position absolute
+                right 1.5em
+                top 50%
+                transform translateY(-50%)
+                font-size 65%
+                opacity 0.5
+
+    .content
+        padding 1em
+        color #333
+        width 100%
+
+        @media (max-width 765px)
+            border-top 4em solid #4e555f
+            min-width 100%
+            width fit-content
+
+        .page-title
+            width 100%
+            text-align center
+            font-weight 600
+            font-size 140%
+            margin-bottom 1em
+
+        .hello-block
+            color white
+            display flex
+            flex-wrap wrap
+            justify-content space-between
+
+            @media (max-width: 550px)
+                justify-content center
+
+            .link-box
+                color white
+                width 15em
+                text-align center
+                padding 2em
+                margin 15px
+                border-radius 7px
+                display flex
+                flex-direction column
+                background-size cover
+                background-position center
+                font-weight 600
+                transition all 0.3s
+                box-shadow 0 0 0.5em rgba(0,0,0,0.3)
+
+                &:hover
+                    transform scale(1.02)
+                    filter brightness(1.2)
+                    box-shadow 0 0 1em rgba(0,0,0,0.3)
+
+                &:nth-of-type(1)
+                    background linear-gradient(#ffa200, #ff5100)
+
+                &:nth-of-type(2)
+                    background linear-gradient(#00d255, #4da069)
+
+                &:nth-of-type(3)
+                    background linear-gradient(#02d9c7, #008b75)
+
+                &:nth-of-type(4)
+                    background linear-gradient(#7502d9, #35008b)
+
+                &:nth-of-type(5)
+                    background linear-gradient(#82377e, #5a39a7)
+
+                &:nth-of-type(6)
+                    background linear-gradient(#02aed9, #007f8b)
+
+                &:nth-of-type(7)
+                    background linear-gradient(#d9aa02, #8b6d00)
+
+                &:nth-of-type(8)
+                    background linear-gradient(#02d938, #8b8900)
+
+                &:nth-of-type(9)
+                    background linear-gradient(#02c7d9, #0e8b00)
+
+                //&>*
+                //    filter drop-shadow(0 0 0.7em #000)
+                //    text-shadow 0 0 0.7em #000
+
+                .icon
+                    font-size 200%
+                    margin-bottom 1em
+
+                .arrow
+                    margin-top 1em
+
+        .divTable
+            display table
+            width 100%
+            border-collapse collapse
+            font-size 80%
+
+            .divTableHead
+                background-color #2d2e2f
+                color white
+                display table-header-group
+                font-weight 600
+
+            .divTableBody
+                background white
+                display table-row-group
+
+            .divTableRow
+                display table-row
+
+
+                &.prior
+                    font-weight bold
+
+                &.primary
+                    background lightgreen
+
+                .divTableCell
+                    border 1px solid #dee2e6
+                    display table-cell
+                    padding 3px 10px
+                    vertical-align middle
+
+
+            .divTableFoot
+                background-color #EEE
+                display table-footer-group
+                font-weight bold
+
+
+            img
+                width 1.5em
+
+        .pagination
+            justify-content center

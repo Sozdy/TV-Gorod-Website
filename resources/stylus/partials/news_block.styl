@@ -1,0 +1,199 @@
+.news-block
+    background white
+    border-radius 3px
+    color #333
+    cursor pointer
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    display flex
+    overflow hidden
+    position relative
+
+    .social-buttons-sm
+        background: #EFF3FA
+        padding: 20px
+
+        .news-icons,
+        .social-buttons
+            display flex
+            flex-direction column
+            align-items center
+
+        .news-icons
+            img
+                margin-bottom: 6px
+
+        .social-buttons
+            img
+                filter: invert(2);
+
+        img
+            width: 20px !important
+            height: 20px !important
+
+    @media $sm-and-smaller
+        font-size 90%
+
+    .image-container
+        position relative
+        width 25em
+        background-size cover
+        background-position center
+
+        .mask
+            position absolute
+            right -1px
+            top 0
+            height 100%
+
+    .news-block-decoration
+        position absolute
+        top 0
+        right 0
+        width 1.7em
+
+    .content
+        H4
+            font-size 1.125em
+            line-height 1.5em
+            font-weight 600
+            transition color 0.3s
+            overflow-wrap: anywhere;
+
+            @media $xs-and-smaller
+                font-size 14px
+
+            ../../:hover H4
+                color #005b8d
+
+        p
+            font-family Lora, serif
+            font-size 1em
+
+        .social-buttons
+            img
+                width 1.2em
+                height 1.2em
+                filter invert(2)
+                opacity 0.5
+                transition opacity .1s
+
+            .share
+                &:hover
+                    opacity 0.9
+
+
+    .news-icons
+        img
+            width 1em
+            height 1em
+
+        &.absolute
+            position absolute
+            top 1em
+            right 1em
+
+            img
+                width 1.5em
+                height 1.5em
+
+    &.horizontal
+        .news-icons
+            right 2em
+
+    &.small
+        margin 1px
+
+
+    &.vertical
+        display block
+
+        @media $md-and-larger
+            font-size 80%
+
+        .image-container
+            width 100%
+            height 14em
+
+            .mask
+                width 100%
+                height auto
+                bottom -1px
+                left 0
+                top auto
+                right auto
+
+
+    @media $xs-and-smaller
+        &.horizontal
+            font-size 100%
+            flex-direction column
+
+            .content
+                position relative
+
+            .news-block-decoration
+            .mask
+            p
+                display none
+
+            .image-container
+                width 100%
+                padding-bottom 60%
+
+            .content
+                background linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0.709513) 35%, rgba(0, 0, 0, 0.529412) 55%, rgba(0, 0, 0, 0) 100%);
+                position absolute
+                bottom 0
+                color white
+
+            .social-buttons
+                img
+                    filter none !important
+                    opacity 1 !important
+
+            .news-icons
+                right 1em !important
+
+        &.vertical
+            .image-container
+                display none
+
+        &.small
+            background-color: #fff
+
+    @media $md-and-smaller
+        &.horizontal.news-page
+            font-size 100%
+            flex-direction column
+
+            .content
+                position relative
+
+            .news-block-decoration
+            .mask
+            p
+                display none
+
+            .image-container
+                width 100%
+                padding-bottom 60%
+
+            .content
+                background linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0.709513) 35%, rgba(0, 0, 0, 0.529412) 55%, rgba(0, 0, 0, 0) 100%);
+                position absolute
+                bottom 0
+                color white
+
+            .social-buttons
+                img
+                    filter none !important
+                    opacity 1 !important
+
+            .news-icons
+                right 1em !important
+
+        &.vertical
+            .image-container{}
+
+        &.small
+            background-color: #fff

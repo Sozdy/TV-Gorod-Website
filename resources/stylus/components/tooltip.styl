@@ -1,0 +1,71 @@
+#tooltip
+    background: #fff
+    border-radius: 3px;
+    display: none;
+    z-index 5
+    box-shadow: 1px 1px 15px rgba(0,0,0,0.17);
+    filter: drop-shadow(1px 1px 15px rgba(0, 0, 0, 0.1));
+
+    .share-full
+        border-radius 3px
+        padding: 20px 12px
+        margin: 0;
+        list-style: none;
+
+        @media $xs-and-smaller
+            padding: 12px
+
+        &__facebook,
+        &__vkontakte,
+        &__odnoklassniki,
+        &__twitter
+            display: block;
+            padding 0 8px
+            cursor pointer
+
+            &:hover
+                background-color: #eee;
+
+            @media $xs-and-smaller
+                padding 3px 6px
+                filter invert(2)
+                opacity: 0.5
+
+                &:hover
+                    background-color: #222;
+
+
+        &__icon
+            object-fit contain
+            width: 28px
+            height: 28px
+
+        &__text
+            color: #333;
+            font-size: 14px;
+            font-family: Montserrat;
+            font-style: normal;
+
+
+#tooltip[data-show]
+    display: block;
+
+
+#tooltip[x-placement="top-end"] > #arrow:before {
+    bottom: -4px;
+}
+#tooltip[x-placement="bottom-end"] > #arrow:before {
+    top: -4px;
+}
+
+#arrow
+    &:before
+        position: absolute;
+        width: 8px;
+        right: 6px;
+        height: 8px;
+        z-index: -1;
+        content: '';
+        transform: rotate(45deg);
+        background: #fff;
+

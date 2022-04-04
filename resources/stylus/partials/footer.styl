@@ -1,0 +1,91 @@
+.footer
+    position: relative;
+    background white
+    border-bottom 1px solid #dddddd
+
+    .city-big-bg
+        //width: 1920px
+        position: fixed;
+        will-change: transform
+        overflow hidden
+        bottom: 0
+        right 50%
+        transform translateX(50%)
+        z-index -1
+
+    .city-small-bg
+        position: fixed;
+        will-change: transform
+        overflow: hidden;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+
+    .content
+        min-height 7em
+        align-items center
+
+        .logo
+            padding 0
+            height 51px
+            width 166px
+            @media (max-width 1199.98px)
+                height 3.1875em
+                width 9em
+            @media (max-width 680px)
+                flex 0 0 100%
+                max-width 100%
+                width 129px
+                height 40px
+                text-align center
+                margin 20px 0 !important
+                padding  0 15px
+
+
+        .links
+            display: flex;
+            justify-content space-evenly
+            margin-bottom: 14px
+            @media $sm-and-smaller
+                margin-bottom 0
+            @media (max-width 680px)
+                flex 0 0 100%
+                max-width 100%
+                text-align center
+
+                .link
+                    font-weight: 500;
+                    @media (max-width 680px)
+                        margin-bottom: 0.5em
+        .link-md
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+        .footer-info
+            font-family "Open Sans"
+            font-style normal
+            font-weight 300
+            font-size 12px
+            line-height 16px
+            text-align center
+            @media $sm-and-smaller
+                text-align left
+            @media (max-width 680px)
+                padding 0!important
+                margin-bottom: 20px
+                margin-top: 18.5px
+                flex 0 0 100%
+                max-width 100%
+                text-align center
+
+
+        .visitor-counter
+            width 166px
+            height 50px
+            cursor pointer
+            justify-content flex-end
+            visibility: hidden;
+            @media (min-width: 768px) and (max-width: 1199.98px)
+                width 140px
+                height 50px
